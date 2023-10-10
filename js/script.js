@@ -44,12 +44,14 @@ submitData.addEventListener('click',
     passengerCar = numGenerator(1, 10);
     numberCP = numGenerator(1, 100000);
 
-
+    const displayNone = document.getElementById('ticketGenerator');
+    displayNone.classList.remove('d-none');
 
     document.getElementById('namePassenger').innerHTML = `${fullName}`;
     document.getElementById('ticketPrice').innerHTML = `${totalCost.toFixed(2)} &euro;`;
     document.getElementById('passengerCar').innerHTML = `${passengerCar}`;
     document.getElementById('numberCP').innerHTML = `${numberCP}`;
+
 
   }
 )
