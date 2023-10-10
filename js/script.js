@@ -28,13 +28,12 @@ submitData.addEventListener('click',
       if (age === 'minor') {
         totalCost -= (totalCost * discountMinor);
         document.getElementById('ticketType').innerHTML = `Biglietto Under 18`;
-        console.log(totalCost);
       } else if (age === 'elder') {
         totalCost -= (totalCost * discountElder);
-        console.log(totalCost);
+        document.getElementById('ticketType').innerHTML = `Biglietto Over 65`;
       } else {
         totalCost;
-        console.log(totalCost);
+        document.getElementById('ticketType').innerHTML = `Biglietto Standard`;
       }
     }
 
