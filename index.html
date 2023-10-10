@@ -16,7 +16,7 @@
     <div class="bg-white text-danger text-center py-4">
       <form class="row justify-content-evenly">
         <div class="col-3">
-          <label for="fullSurname" class="form-label fw-medium">Nome e Cognome</label>
+          <label for="fullName" class="form-label fw-medium">Nome e Cognome</label>
           <input type="text" class="form-control border-danger" id="fullName" name="fullName" value="">
         </div>
         <div class="col-3">
@@ -25,15 +25,15 @@
         </div>
         <div class="col-3">
           <label for="" class="form-label fw-medium">Fascia d'et&agrave;</label>
-          <select class="form-select border-danger">
+          <select class="form-select border-danger" id="age" name="name" value="">
             <option selected>Seleziona fascia d'et&agrave;...</option>
-            <option value="1" class="minor">Minorenne</option>
-            <option value="2" class="adult">Maggiorenne</option>
-            <option value="3" class="over65">Over 65</option>
+            <option value="minor">Minorenne</option>
+            <option value="adult">Maggiorenne</option>
+            <option value="elder">Over 65</option>
           </select>
         </div>
         <div class="col-12 mt-5 text-center ">
-          <button type="submit" class="btn bg-secondary-subtle mx-2 text-danger fw-medium">Genera</button>
+          <button type="button" class="btn bg-secondary-subtle mx-2 text-danger fw-medium btn-genera">Genera</button>
           <button type="reset" class="btn bg-secondary-subtle mx-2 text-danger fw-medium">Annulla</button>
         </div>
       </form>
