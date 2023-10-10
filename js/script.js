@@ -38,13 +38,18 @@ submitData.addEventListener('click',
       }
     }
 
-    function passengerCarNumGenerator(min, max) {
+    function numGenerator(min, max) {
       return Math.floor(Math.random() * (max - min + 1) + min)
     }
-    passengerCar = passengerCarNumGenerator(1, 10);
+    passengerCar = numGenerator(1, 10);
+    numberCP = numGenerator(1, 100000);
+
+
 
     document.getElementById('namePassenger').innerHTML = `${fullName}`;
     document.getElementById('ticketPrice').innerHTML = `${totalCost.toFixed(2)} &euro;`;
     document.getElementById('passengerCar').innerHTML = `${passengerCar}`;
+    document.getElementById('numberCP').innerHTML = `${numberCP}`;
+
   }
 )
